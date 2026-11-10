@@ -1,0 +1,6 @@
+my_dashboard/
+├── app.py          # Main entrypoint script
+└── src/
+    ├── home.py     # Home dashboard logic
+    ├── sales.py    # Sales tracking dashboard
+    └── inventory.py# Inventory tracking dashboard
