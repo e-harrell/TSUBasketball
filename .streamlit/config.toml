@@ -6,13 +6,16 @@ primaryColor = "#FAFAFA"
 backgroundColor = "#FAFAFA"
 
 # Background color for sidebar and interactive widgets
-secondaryBackgroundColor = "#1c2a94"
+secondaryBackgroundColor = "#FAFAFA"
 
 # Text color
 textColor = "#000000"
 
 # Font family ("sans serif", "serif", or "monospace")
 font = "serif"
+
+# font size
+baseFontSize = 16
 
 [theme.sidebar]
 backgroundColor="#171796"
