@@ -1,4 +1,5 @@
 import streamlit as st
+st.set_page_config(page_title="2025-26 TSU Basketball Analysis", layout="wide")
 
 # 1. Define individual pages
 home_page = st.Page(
@@ -29,12 +30,12 @@ opponent_stats_page = st.Page(
 )
 statistical_analysis_page = st.Page(
     page="pages/statistical_analysis.py", 
-    title="Statistical Analysis of TSU and Opponent Data", 
+    title="Statistical Analysis", 
     icon=":material/analytics:"
 )
 # 2. Group into dashboard sections
 navigation_menu = st.navigation({
-    "Pages": [home_page,game_map_page, opponent_map_page, tsu_stats_page, opponent_stats_page, statistical_analysis_page]
+    "Menu": [home_page,game_map_page, opponent_map_page, tsu_stats_page, opponent_stats_page, statistical_analysis_page]
 })
 
 # 3. Apply global page configs and execute navigation
