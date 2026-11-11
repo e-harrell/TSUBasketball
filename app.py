@@ -18,14 +18,9 @@ opponent_map_page = st.Page(
     title="Opponent Locations", 
     icon=":material/map:"
 )
-tsu_stats_page = st.Page(
-    page="pages/tsu_stats.py", 
-    title="2025-26 TSU Statistics", 
-    icon=":material/trending_up:"
-)
-opponent_stats_page = st.Page(
-    page="pages/opponent_stats.py", 
-    title="2025-26 Opponent Statistics", 
+stats_page = st.Page(
+    page="pages/stats.py", 
+    title="Team Statistics", 
     icon=":material/trending_up:"
 )
 statistical_analysis_page = st.Page(
@@ -35,7 +30,7 @@ statistical_analysis_page = st.Page(
 )
 # 2. Group into dashboard sections
 navigation_menu = st.navigation({
-    "Menu": [home_page,game_map_page, opponent_map_page, tsu_stats_page, opponent_stats_page, statistical_analysis_page]
+    "Menu": [home_page,game_map_page, opponent_map_page, stats_page, statistical_analysis_page]
 })
 
 # 3. Apply global page configs and execute navigation
