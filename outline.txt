@@ -1,6 +1,10 @@
 my_dashboard/
 ├── app.py          # Main entrypoint script
-└── src/
+└── pages/
     ├── home.py     # Home dashboard logic
-    ├── sales.py    # Sales tracking dashboard
-    └── inventory.py# Inventory tracking dashboard
+    ├── game_map.py    # Map of game locations
+    └── opponent_map.py # Map of Opponents locations
+    └── tsu_stats.py # Visualizations of TSU stats
+    └── opponent_stats.py # Visualizations of Opponent stats
+
+
