@@ -33,7 +33,7 @@ view_state = pdk.ViewState(latitude=39.8283, longitude=-98.5795, zoom=3.5)
 deck = pdk.Deck(map_style='road',
     layers=[layer],
     initial_view_state=view_state,
-    tooltip={"text": "Opponent: {Opponent}"},  # Use \n for new lines
+    tooltip={"text": "{Opponent}"},  # Use \n for new lines
 )
 st.title("Opponent Map")
 st.write("Map of Opponents for the 2025-26 Season")
