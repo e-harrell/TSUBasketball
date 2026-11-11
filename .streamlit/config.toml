@@ -1,0 +1,19 @@
+[theme]
+# Primary accent color for buttons, sliders, etc.
+primaryColor = "#FAFAFA"
+
+# Base background color for the main content area
+backgroundColor = "#FAFAFA"
+
+# Background color for sidebar and interactive widgets
+secondaryBackgroundColor = "#1c2a94"
+
+# Text color
+textColor = "#000000"
+
+# Font family ("sans serif", "serif", or "monospace")
+font = "serif"
+
+[theme.sidebar]
+backgroundColor="#171796"
+textColor = "#FAFAFA"
