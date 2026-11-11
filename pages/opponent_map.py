@@ -10,7 +10,7 @@ mapdata=df[['Opponent', 'Opponent_Latitude', 'Opponent_Longitude']]
 # create distinct coordinates with jittering to keep from having the exact same coordinates 
 # for 2 different schools in the same city
 
-jitter_amount = 0.0001
+jitter_amount = 0.0005
 
 mapdata["latitude"] = mapdata["Opponent_Latitude"] + np.random.normal(0, jitter_amount, size=len(mapdata))
 mapdata["longitude"] = mapdata["Opponent_Longitude"] + np.random.normal(0, jitter_amount, size=len(mapdata))
