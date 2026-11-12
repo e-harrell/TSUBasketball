@@ -13,7 +13,6 @@ st.markdown(
     <style>
     div[data-testid="stSelectbox"] label p {
         font-size: 24px !important;
-        font-weight: bold; /* Optional: make it stand out more */
     }
     </style>
     <style>
@@ -22,12 +21,27 @@ st.markdown(
        
     }
     </style>
+    <style>
+    [data-testid="stMetricValue"] {
+        font-size: 20px; /* Adjust size as needed */
+    }
+    </style>
+    <style>
+    /* Target the selectbox/multiselect input text and dropdown menu items */
+    .stSelectbox div[data-baseweb="select"] * {
+        font-size: 20px !important;
+    }
+    .stMultiSelect div[data-baseweb="select"] * {
+        font-size: 20px !important;
+    }
+    </style>
     """,
     unsafe_allow_html=True
 )
+
 # Add the selection box (dropdown menu)
 selected_game = st.selectbox(
-    "Choose a game date to display game location on the map:", options=mapdata["Date"].unique())
+    "Choose a game date to display game location on the map:", mapdata["Date"])
 
 # Create filtered data based on dropdown
 selected_row=mapdata[mapdata['Date'] == selected_game]
@@ -37,10 +51,10 @@ col1, col2 = st.columns(2)
 with col1:
     st.metric(label='Opponent',value=selected_row['Opponent'].values[0])
 with col2:
-    st.metric(label='Location',value=selected_row['Game_Location'].values[0])
+    st.metric(label='Game Location',value=selected_row['Game_Location'].values[0])
 
 #Disaply map
-st.map(selected_row, zoom=10)
+st.map(selected_row, zoom=11,color=(23, 23, 150), size=100)
 
 
 
