@@ -36,6 +36,6 @@ deck = pdk.Deck(map_style='road',
     tooltip={"text": "{Opponent}"},  # Use \n for new lines
 )
 st.title("Opponent Map")
-st.write("Map of Opponents for the 2025-26 Season")
+st.write("Locations of Opponents for the 2025-26 Season")
 st.pydeck_chart(deck)
 
