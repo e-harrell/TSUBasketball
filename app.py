@@ -1,5 +1,4 @@
 import streamlit as st
-st.set_page_config(page_title="2025-26 TSU Basketball Analysis", layout="wide")
 
 # 1. Define individual pages
 home_page = st.Page(
@@ -33,6 +32,4 @@ navigation_menu = st.navigation({
     "Menu": [home_page,game_map_page, opponent_map_page, stats_page, statistical_analysis_page]
 })
 
-# 3. Apply global page configs and execute navigation
-st.set_page_config(page_title="2025-26 TSU Basketball Analysis", layout="wide")
 navigation_menu.run()
