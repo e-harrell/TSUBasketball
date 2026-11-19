@@ -7,11 +7,6 @@ home_page = st.Page(
     icon=":material/home:", 
     default=True
 )
-game_map_page = st.Page(
-    page="pages/game_map.py", 
-    title="Game Locations", 
-    icon=":material/map:"
-)
 opponent_map_page = st.Page(
     page="pages/opponent_map.py", 
     title="Opponent Locations", 
@@ -34,7 +29,7 @@ statistical_analysis_page = st.Page(
 )
 # 2. Group into dashboard sections
 navigation_menu = st.navigation({
-    "Menu": [home_page,game_map_page, opponent_map_page, team_stats_page, game_stats_page,  statistical_analysis_page]
+    "Menu": [home_page, opponent_map_page, team_stats_page, game_stats_page,  statistical_analysis_page]
 })
 
 navigation_menu.run()
